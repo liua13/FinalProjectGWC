@@ -15,8 +15,9 @@ canvas {
 }
 
 p {
-  font-family: "open sans";
+  font-family: "Open Sans";
   line-height: 1.25;
+  text-align:justify;
 }
 
 
@@ -147,10 +148,12 @@ p {
 
 #main {
   order: 2;
-  margin-top: -6.25em;
+  margin-top: -8.5em;
   margin-left: 24.5em;
   margin-right: 24.5em;
   line-height: 1;
+  /*display: flex;
+  flex-flow: row;*/
 }
 
 #credits {
