@@ -4,7 +4,8 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: #d0fdcf;
+  /*background-color: #d0fdcf;*/
+  background-color: #85FFC7;
   text-decoration: none;
 }
 
@@ -142,7 +143,9 @@ a {
 }
 
 #current {
-  background-color: #d0fdcf;
+  /*background-color: #d0fdcf;*/
+  /*background-color: #5AB96C;*/
+  background-color: #85FFC7;
 }
 
 #canvas {
@@ -173,9 +176,10 @@ a {
 }
 
 #homepage-play {
+  margin-top: -1em;
   font-family: "bungee";
   font-size: 2em;
   text-align: center;
   background-color: auto;
-  color: blue;
+  color: 	#6e006f;
 }*/
