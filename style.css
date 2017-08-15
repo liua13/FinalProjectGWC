@@ -14,6 +14,11 @@ canvas {
   margin-bottom: -4em;
 }
 
+p {
+  font-family: "open sans";
+  line-height: 1.25;
+}
+
 
 .nav {
   top: 0;
@@ -46,6 +51,7 @@ canvas {
   line-height: 1;
 }
 
+/* FOR CONTACT PAGE MISSION SECTION*/
 .sections {
   display: flex;
   background-color: auto;
@@ -69,6 +75,7 @@ canvas {
   width: 67%;
 }
 
+/* FOR CONTACT PAGE MEET THE TEAM SECTION */
 .profiles {
   display: flex;
   flex-flow: row;
@@ -90,13 +97,35 @@ canvas {
   height: auto;
 }
 
+/* FOR LEARN PAGE ALL THE PRODUCTS */
+.all {
+  display: flex;
+  flex-flow: row;
+}
+
+.products {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+.product {
+  display: flex;
+  flex-flow: row;
+}
+
+.elements {
+  display: flow;
+  flex-flow: column;
+}
+
+
 .profpic {
   align-self:center;
   border-radius: 50%;
-  /*border-width: 2em;
-  border-color: #d0fdcf;*/
 }
 
+/* ALL HEADERS IN WEBSITE*/
 .title {
   font-family: "bungee shade";
 }
