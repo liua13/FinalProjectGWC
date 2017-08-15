@@ -1,24 +1,25 @@
 body {
   font-family: "bungee";
-  display:flex;
-  /*justify-content:center;*/
-  align-items:center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   background-color: #d0fdcf;
+  text-decoration: none;
 }
 
 canvas {
   vertical-align: top;
+  margin-top: 5em;
+  margin-bottom: -4em;
 }
 
-body{
-  text-decoration: none;
-}
 
-.nav{
-  top:0;
-  left:0;
-  width:100%;
-  position:fixed;
+.nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
   list-style-type: none;
   background-color: white;
   overflow: hidden;
@@ -26,35 +27,96 @@ body{
   padding: 0em;
 }
 
-.nav a{
+.nav a {
   color: black;
   text-decoration: none;
-  float:left;
-  display:block;
-  padding:1.5em;
+  float: left;
+  display: block;
+  padding: 1.5em;
 }
 
-.nav a:first-child{
-  margin-left:0%;
+.nav a:first-child {
+  margin-left: 0%;
 }
 
-.main {
-  margin-top: 80px;
-  margin-left:50px;
-  margin-right: 50px;
+.maintext {
+  margin-top: 4em;
+  margin-left: 3.125em;
+  margin-right: 3.125em;
+  line-height: 1;
 }
 
-/*.nav a:hover:not(#logo) a:hover:not(#current){
-  background-color: black;
-  color:white;
-}*/
+.sections {
+  display: flex;
+  background-color: auto;
+}
 
-#logo{
-  padding: 0.45em 0.75em;
-  font-size:1.6em;
+.section1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  height: auto;
+  width: 33%;
+}
+
+.section2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  height: auto;
+  width: 67%;
+}
+
+.profiles {
+  display: flex;
+  flex-flow: row;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.profile {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  border-radius: 2.5%;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  padding: 0.75em 0.75em 0.75em 0.75em;
+  width: 25%;
+  height: auto;
+}
+
+.profpic {
+  align-self:center;
+  border-radius: 50%;
+  /*border-width: 2em;
+  border-color: #d0fdcf;*/
+}
+
+.title {
   font-family: "bungee shade";
 }
 
-#current{
+#logo {
+  padding: 0.65em 0.75em;
+  font-size: 1.6em;
+  font-family: "bungee shade";
+}
+
+#current {
   background-color: #d0fdcf;
+}
+
+#canvas {
+  order: 1;
+}
+
+#main {
+  order:2;
+  margin-top: -6.25em;
+  margin-left: 24.5em;
+  margin-right: 24.5em;
+  line-height: 1;
 }
