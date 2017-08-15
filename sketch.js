@@ -52,6 +52,7 @@ var life = 0;
 
 var allItems;
 var info;
+var jumpVar = 0;
 
 class Product{
 	constructor(name, x_pos, y_pos, imgURL, good) {
@@ -192,12 +193,9 @@ function draw() {
 	drawSprites();
 
 	beginGame();
-
-	if(start){
-		if(keyWentDown("space")){
-		  mainSprite.changeAnimation("jump");
-		  jump();
-		}
+	
+	if(start){		
+		jump();
 		
 		offObject();
 		moveObject();
@@ -211,12 +209,17 @@ function draw() {
 }
 
 function jump(){
-	up();
-	
-	setTimeout(function(){
+	if(keyDown("space") && jumpVar <= 10+(life*1.5)){
+		up();
+		mainSprite.changeAnimation("jump");
+		jumpVar += 1;
+	} else {
 		down();
 		mainSprite.changeAnimation("walk");
-	}, 350);
+		setTimeout(function(){
+			jumpVar = 0;
+		}, 400);
+	}
 }
 
 function up(){
@@ -254,8 +257,8 @@ function offObject(){
 function moveObject(){
 	setTimeout(function(){
 		for(var i = 0; i < allItems.good.length; i++){
-			allItems.good[i].object.position.x -= (life + 1)*3.5;
-			allItems.bad[i].object.position.x -= (life + 1)*3.5;
+			allItems.good[i].object.position.x -= (life + 1)*3;
+			allItems.bad[i].object.position.x -= (life + 1)*3;
 		}
 	}, 100);
 }
@@ -281,7 +284,7 @@ function moveScenery(){
 function objectCollide(){
 	for(var i = 0; i < allItems.good.length; i++){
 		if(mainSprite.overlap(allItems.good[i].object)){
-			allItems.good[i].object.position.x = getRandom(800, 4000);
+			allItems.good[i].object.position.x = getRandom(800, 6000);
 			info.addImage(allItems.good[i].info);
 			
 			setTimeout(function(){
@@ -290,7 +293,7 @@ function objectCollide(){
 		}
 		
 		if(mainSprite.overlap(allItems.bad[i].object)){
-			allItems.bad[i].object.position.x = getRandom(800, 4000);
+			allItems.bad[i].object.position.x = getRandom(800, 6000);
 			allItems.life[life].object.addImage(imgDeath);
 			info.addImage(allItems.bad[i].info);
 			
