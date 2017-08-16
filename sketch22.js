@@ -199,9 +199,7 @@ function draw() {
 		
 		if(keyDown("space")){
 			jumpVar += 1;
-			console.log(3);
 		} else {
-			console.log(2);
 			jumpVar = 0;
 		}
 		
