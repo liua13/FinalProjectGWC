@@ -21,10 +21,6 @@ p {
   text-align:justify;
 }
 
-a {
-  text-decoration: none;
-}
-
 .nav {
   top: 0;
   left: 0;
@@ -70,6 +66,7 @@ a {
   padding-right: 0.7em;
   height: auto;
   width: 33%;
+  text-align: left;
 }
 
 .section2 {
@@ -101,6 +98,7 @@ a {
   padding: 0.75em 0.75em 0.75em 0.75em;
   width: 25%;
   height: auto;
+  text-align: left;
 }
 
 .profpic {
@@ -108,31 +106,82 @@ a {
   border-radius: 50%;
 }
 
-/* FOR LEARN PAGE ALL THE PRODUCTS */
-.all {
-  display: flex;
-  flex-flow: row;
+.align-left {
+  text-align: left;
 }
 
-.products {
+/* FOR LEARN PAGE ALL THE PRODUCTS */
+.productsection {
+  display: flex;
+  flex-flow: row;
+  margin-top: -1.25em;
+}
+
+.productportion {
   display: flex;
   flex-flow: column;
   width: 50%;
+  border-radius: 2.5%;
+  /*margin: 0.75em 0.375em;*/
+}
+
+.productheader {
+  font-family: "bungee";
+  margin-left:0.5em;
 }
 
 .product {
   display: flex;
   flex-flow: row;
+  /*height: 15em;*/
+  margin: 0.5em 0.75em;
+  /*padding: 0.25em;*/
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+  padding-top: 0.25em;
+  background-color: white;
+  border-radius: 2.5%;
 }
 
-.elements {
-  display: flow;
+.productimage {
+  width: 33%;
+  margin-left: -0.5em;
+}
+
+.productinfo {
+  display: flex;
   flex-flow: column;
+  width: 66%;
+  /*align-self: center;*/
+}
+
+.productname {
+  align-self: auto;
+}
+
+.productblurb {
+  font-family: "open sans";
+  text-align: justify;
 }
 
 /* ALL HEADERS IN WEBSITE*/
 .title {
   font-family: "bungee shade";
+}
+
+.link {
+  text-decoration: none;
+  background-color: auto;
+  color: black;
+}
+
+#otherspace {
+  background-color: #85FFC7;
+  position: fixed;
+  width: 100%;
+  padding: 2.2em;
+  top: 0;
+  left: 0;
 }
 
 #logo {
@@ -180,6 +229,7 @@ a {
   font-family: "bungee";
   font-size: 2em;
   text-align: center;
-  background-color: auto;
-  color: 	#6e006f;
-}*/
+  text-decoration: none;
+  background-color: inherit;
+  color: white;
+}
