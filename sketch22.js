@@ -1,3 +1,5 @@
+// Initializing all the variables
+
 var start = false;
 var pressed = false;
 
