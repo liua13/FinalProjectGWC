@@ -1,6 +1,4 @@
 # Corporate Crusher: Helping the Environment Through a Game
-Created by Annie Liu, Aditi Dam, Jasmyne Roberts, Iesha James 
+Created by Annie Liu, Aditi Dam, Jasmyne Roberts, Iesha James (forked from Aditi's page)
 
-(forked from Aditi's page)
-
-Final Girls Who Code project for the 2017 Summer Immersion Program
+Final Girls Who Code project for the 2017 Summer Immersion Program. To find code, please change "master" to "gh-pages." Enjoy!
